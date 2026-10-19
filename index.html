@@ -115,7 +115,10 @@ section{position:relative}
 .name span{display:block}
 .name .l2{color:transparent;-webkit-text-stroke:1.6px var(--sky);position:relative}
 .name .l2 b{color:var(--sky);-webkit-text-stroke:0;font-weight:inherit}
-.role{font:600 clamp(17px,1.6vw,20px)/1.4 var(--ft);color:var(--ice);margin-bottom:12px}
+.role{font:500 clamp(15.5px,1.35vw,17.5px)/1.45 var(--ft);color:var(--ink);margin-bottom:18px;padding-left:14px;border-left:2px solid var(--blue)}
+.role strong{display:block;font-weight:700;font-size:1.12em;color:var(--ice);margin-bottom:2px}
+.role span{display:block}
+.role span+span{color:var(--muted)}
 .hero p.intro{color:var(--muted);font-size:clamp(16.5px,1.4vw,18.5px);max-width:50ch;margin-bottom:30px}
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:30px}
 .now{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px;color:var(--muted)}
@@ -430,9 +433,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
   <div class="hero-bg" aria-hidden="true"><svg id="traces" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice"></svg></div>
   <div class="wrap">
     <div>
-      <div class="hero-k"><span class="dot"></span>EECE · MIST, Dhaka · Class of 2027</div>
+      <div class="hero-k"><span class="dot"></span>Dhaka, Bangladesh · Class of 2027</div>
       <h1 class="name d"><span>Abdullah</span><span class="l2">Al <b>Mahi</b></span></h1>
-      <p class="role">VLSI and hardware-aware AI researcher</p>
+      <p class="role"><strong>Undergraduate Student</strong><span>Military Institute of Science and Technology</span><span>Department of Electrical, Electronic and Communication Engineering</span></p>
       <p class="intro">I design memory circuits that compute, wearables that read how you move, and electronics for aircraft that take off straight up.</p>
       <div class="cta">
         <a class="btn solid" href="#research">See my research <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10h12M11 5l5 5-5 5"/></svg></a>
