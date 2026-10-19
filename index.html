@@ -299,9 +299,9 @@ details li::marker{color:var(--primary)}
 .pc.wide{grid-column:span 2}
 .pc:hover,.pc.live-touch{border-color:rgba(125,182,222,.55);transform:translateY(-4px)}
 .pc .art{position:relative;background:linear-gradient(160deg,#262A3A,var(--deep));border-bottom:1px solid var(--line);aspect-ratio:16/10;display:grid;place-items:center;overflow:hidden}
-.pc.wide .art{aspect-ratio:auto;min-height:280px}
+.pc.wide .art{aspect-ratio:auto;min-height:clamp(320px,35vw,420px)}
 .pc .art svg{position:absolute;inset:40px 8px 6px;width:calc(100% - 16px);height:calc(100% - 46px)}
-.pc .art img.photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.pc .art img.photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform .6s}
 .pc:hover .art img.photo{transform:scale(1.05)}
 .pc .art .cat{position:absolute;left:14px;top:14px;z-index:2}
 .pc .body{padding:22px 22px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
@@ -567,7 +567,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
   <div class="wrap">
     <div class="kick reveal"><b>03</b> Research</div>
     <h2 class="h2 d reveal">Papers &amp; <em>manuscripts</em></h2>
-    <p class="lede reveal">Two peer-reviewed IEEE conference papers and two manuscripts, across VLSI, wearables, photonics and aerial robotics.</p>
+    <p class="lede reveal">Two peer-reviewed IEEE conference papers and a manuscript under review, across VLSI, wearables, and photonics.</p>
 
     <div class="papers">
       <article class="paper reveal live-on-view">
