@@ -3165,8 +3165,7 @@ formsense($('#fsProj'),400,225,.34);
 (function pcf(){
   const svg=$('#pcf'); const cx=92,cy=112,R=72,cut=cy-50;
   const defs=el('defs',{},svg);const cp=el('clipPath',{id:'dcut'},defs);el('rect',{x:0,y:cut,width:260,height:200},cp);
-  el('rect',{x:cx-R-4,y:cut-16,width:2*R+8,height:16,fill:'rgba(72,149,239,.18)',stroke:'rgba(72,149,239,.4)','stroke-dasharray':'3 3'},svg);
-  el('text',{x:cx,y:cut-22,'text-anchor':'middle',fill:'#4895EF','font-family':'JetBrains Mono','font-size':9},svg).textContent='analyte (cancer cells, blood)';
+  el('text',{x:cx,y:cut-10,'text-anchor':'middle',fill:'#4895EF','font-family':'JetBrains Mono','font-size':9.5},svg).textContent='analyte (cancer cells, blood)';
   el('circle',{cx,cy,r:R,fill:'#1E2033',stroke:'#94A3B8','stroke-width':1.5,'clip-path':'url(#dcut)'},svg);
   el('rect',{x:cx-Math.sqrt(R*R-50*50),y:cut-3,width:2*Math.sqrt(R*R-50*50),height:5,fill:'#4895EF'},svg);
   el('text',{x:cx+R-6,y:cut+14,fill:'#4895EF','font-family':'JetBrains Mono','font-size':9,'text-anchor':'end'},svg).textContent='Au layer';
