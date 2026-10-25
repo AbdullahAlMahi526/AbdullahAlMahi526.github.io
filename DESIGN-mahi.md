@@ -112,6 +112,7 @@ GitHub Pages from the `main` branch, root folder, in Mahi's account `AbdullahAlM
 | 19 Oct 2026 | Removed the four stat badges from the portrait; the portrait now stands alone in its ring at every size |
 | 19 Oct 2026 | Removed unpublished VTOL drone paper; updated paper counter from 4 to 3; uploaded and committed VTOL.jpg to repository root |
 | 25 Oct 2026 | Bespoke UI/UX redesign & engineering refactor: upgraded typography to Plus Jakarta Sans & JetBrains Mono; implemented exact tri-accent palette (Electric Blue #4895EF, Deep Tech Purple #7209B7, Vibrant Magenta/Pink #F50BBE) over #1E2022; refactored hero with confident asymmetrical layout and dual-accent CTAs; built interactive "See More" slide-out drawer system for all research papers and projects with dedicated fields for DOIs/papers, LinkedIn announcements, and GitHub repositories; preserved full interactive CIM Lab and SVG circuit animations; added subtle glassmorphism and ambient border glow micro-interactions. |
+| 25 Oct 2026 | Updated Robolution counter label to "Participants Led · Organizer, National ROBOLUTION Fest 2025" per user request. |
 
 ## 11. Open items
 
