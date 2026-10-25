@@ -2288,6 +2288,60 @@ footer .wrap {
   }
   .reveal { opacity: 1; transform: none; }
 }
+/* ---------- Social Official Logos (Transparent / No Background) ---------- */
+.social-logos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 26px;
+}
+.logo-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: transparent!important;
+  border: none!important;
+  border-radius: 12px;
+  color: #94A3B8;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              color 0.25s ease,
+              filter 0.25s ease;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+}
+.logo-btn svg {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.logo-btn:hover {
+  transform: translateY(-3px) scale(1.15);
+}
+.logo-btn.li:hover {
+  color: #0A66C2;
+  filter: drop-shadow(0 4px 14px rgba(10, 102, 194, 0.65));
+}
+.logo-btn.gh:hover {
+  color: #FFFFFF;
+  filter: drop-shadow(0 4px 14px rgba(255, 255, 255, 0.55));
+}
+.logo-btn.gs:hover {
+  color: #4895EF;
+  filter: drop-shadow(0 4px 14px rgba(72, 149, 239, 0.65));
+}
+.logo-btn.rg:hover {
+  color: #00CCBB;
+  filter: drop-shadow(0 4px 14px rgba(0, 204, 187, 0.65));
+}
+.logo-btn.orcid:hover {
+  color: #A6CE39;
+  filter: drop-shadow(0 4px 14px rgba(166, 206, 57, 0.65));
+}
 </style>
 </head>
 <body>
@@ -2743,12 +2797,22 @@ footer .wrap {
         <button class="btn solid" id="copy" type="button"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M13 4H5a1 1 0 0 0-1 1v8"/></svg>Copy email</button>
         <a class="btn line cv-only" href="cv.pdf" download>Download CV</a>
       </div>
-      <div class="links reveal" style="margin-top:24px">
-        <a class="lk" href="https://www.linkedin.com/in/aamahi" target="_blank" rel="noopener">LinkedIn<svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10l6-6M5 4h5v5"/></svg></a>
-        <a class="lk" href="https://github.com/AbdullahAlMahi526" target="_blank" rel="noopener">GitHub<svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10l6-6M5 4h5v5"/></svg></a>
-        <a class="lk" href="https://scholar.google.com/citations?user=k0adMQcAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar<svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10l6-6M5 4h5v5"/></svg></a>
-        <a class="lk" href="https://www.researchgate.net/profile/Abdullah-Al-Mahi-2" target="_blank" rel="noopener">ResearchGate<svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10l6-6M5 4h5v5"/></svg></a>
-        <a class="lk" href="https://orcid.org/0009-0002-0236-7730" target="_blank" rel="noopener">ORCID<svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10l6-6M5 4h5v5"/></svg></a>
+      <div class="social-logos reveal" aria-label="Official Profile Links">
+        <a class="logo-btn li" href="https://www.linkedin.com/in/aamahi" target="_blank" rel="noopener" aria-label="LinkedIn Profile" title="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+        </a>
+        <a class="logo-btn gh" href="https://github.com/AbdullahAlMahi526" target="_blank" rel="noopener" aria-label="GitHub Profile" title="GitHub">
+          <svg viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <a class="logo-btn gs" href="https://scholar.google.com/citations?user=k0adMQcAAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="Google Scholar Profile" title="Google Scholar">
+          <svg viewBox="0 0 24 24"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+        </a>
+        <a class="logo-btn rg" href="https://www.researchgate.net/profile/Abdullah-Al-Mahi-2" target="_blank" rel="noopener" aria-label="ResearchGate Profile" title="ResearchGate">
+          <svg viewBox="0 0 24 24"><path d="M19.586 0c-.818 0-1.508.19-2.073.565-.563.377-.97.936-1.213 1.68a3.193 3.193 0 0 0-.112.437 7.065 7.065 0 0 0-1.125-.783C14.078.165 12.973 0 11.75 0 10.091 0 8.656.377 7.447 1.13 6.237 1.885 5.28 2.913 4.58 4.215c-.7 1.3-1.05 2.78-1.05 4.437 0 1.673.35 3.167 1.05 4.482.7 1.315 1.657 2.35 2.867 3.104 1.21.753 2.644 1.13 4.303 1.13 1.256 0 2.375-.173 3.358-.52 1.01-.35 1.87-.852 2.583-1.504l-.002.348c0 .77-.168 1.402-.505 1.897-.337.494-.852.87-1.545 1.127-.693.256-1.57.384-2.63.384-.814 0-1.637-.09-2.47-.27-.83-.18-1.604-.46-2.32-.84v2.798c.75.31 1.54.54 2.37.69.83.15 1.66.22 2.5.22 1.77 0 3.25-.26 4.45-.78 1.2-.52 2.11-1.3 2.73-2.34.62-1.04.93-2.34.93-3.9V7.02h-4.32v2.33h1.86v3.31c-.48.43-1.03.76-1.65.98-.62.22-1.3.33-2.04.33-1.1 0-2.04-.26-2.82-.78-.78-.52-1.39-1.24-1.83-2.16-.44-.92-.66-1.99-.66-3.21 0-1.2.22-2.27.66-3.19.44-.92 1.05-1.64 1.83-2.16.78-.52 1.72-.78 2.82-.78.88 0 1.67.16 2.37.48.7.32 1.28.77 1.74 1.35l2.04-1.68C18.67 1.02 17.82.52 16.79.21c-.41-.12-.85-.19-1.31-.21h.01c.21-.18.47-.32.78-.42.31-.1.68-.15 1.11-.15.7 0 1.27.17 1.71.51.44.34.66.82.66 1.44v1.39h-2.16v2.33h4.62V2.42c0-.77-.24-1.4-.72-1.89-.48-.49-1.13-.73-1.95-.73z"/></svg>
+        </a>
+        <a class="logo-btn orcid" href="https://orcid.org/0009-0002-0236-7730" target="_blank" rel="noopener" aria-label="ORCID Profile" title="ORCID">
+          <svg viewBox="0 0 24 24"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.016-5.325 5.016h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z"/></svg>
+        </a>
       </div>
     </div>
     <form class="form reveal" id="form">

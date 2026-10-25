@@ -114,6 +114,7 @@ GitHub Pages from the `main` branch, root folder, in Mahi's account `AbdullahAlM
 | 25 Oct 2026 | Bespoke UI/UX redesign & engineering refactor: upgraded typography to Plus Jakarta Sans & JetBrains Mono; implemented exact tri-accent palette (Electric Blue #4895EF, Deep Tech Purple #7209B7, Vibrant Magenta/Pink #F50BBE) over #1E2022; refactored hero with confident asymmetrical layout and dual-accent CTAs; built interactive "See More" slide-out drawer system for all research papers and projects with dedicated fields for DOIs/papers, LinkedIn announcements, and GitHub repositories; preserved full interactive CIM Lab and SVG circuit animations; added subtle glassmorphism and ambient border glow micro-interactions. |
 | 25 Oct 2026 | Updated Robolution counter label to "Organizer · National ROBOLUTION Fest 2025" per user request. |
 | 25 Oct 2026 | Removed 2-Layer PCB and Automated Home Lighting projects per user request; updated engineering projects stat counter from 5 to 3. |
+| 25 Oct 2026 | Replaced text profile link buttons with official transparent SVG logos (LinkedIn, GitHub, Google Scholar, ResearchGate, ORCID) with brand-colored hover micro-interactions. |
 
 ## 11. Open items
 
